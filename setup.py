@@ -1,7 +1,3 @@
-""""
-Usage:
-    python setup.py py2app
-"""
 # in progress
 from setuptools import setup
 from Cython.Build import cythonize
