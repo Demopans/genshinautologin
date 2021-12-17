@@ -7,7 +7,8 @@ def autoCheckIn() -> None:
     attempt to auto check in upon starting program,
     """
     try:
-        if reward := gs.claim_daily_reward() is not None:
+        reward = gs.claim_daily_reward()
+        if reward is not None:
             print(f"Claimed daily reward - {reward['cnt']}x {reward['name']}")
         else:
             print("Could not claim daily reward")
@@ -27,7 +28,7 @@ def tmp() -> None:
 def configCookie() -> None:
     args: list[str] = sys.argv
     if len(args) != 3:
-        print('autosign.c <ltuid> <ltoken>')
+        print('autosign.o <ltuid> <ltoken>')
         sys.exit(2)
 
     t = gs.get_browser_cookies()

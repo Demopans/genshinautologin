@@ -1,2 +1,4 @@
-genshinstats==1.4.11.2
+genshinstats
 schedule
+cython
+pyinstaller
