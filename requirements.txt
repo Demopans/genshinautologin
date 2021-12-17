@@ -1,0 +1,2 @@
+genshinstats==1.4.11.2
+schedule
