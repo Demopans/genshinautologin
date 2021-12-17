@@ -1,7 +1,8 @@
 import genshinstats as gs
-import json as js
+import sys
 
-def autoCheckIn():
+
+def autoCheckIn() -> None:
     """
     attempt to auto check in upon starting program,
     """
@@ -14,7 +15,7 @@ def autoCheckIn():
         print(e)
 
 
-def tmp():
+def tmp() -> None:
     import schedule
     import time
     schedule.every().day.at('00:00').do(autoCheckIn)
@@ -23,12 +24,16 @@ def tmp():
         time.sleep(1)
 
 
-def configCookie():
+def configCookie() -> None:
+    args: list[str] = sys.argv
+    if len(args) != 3:
+        print('autosign.c <ltuid> <ltoken>')
+        sys.exit(2)
+
     t = gs.get_browser_cookies()
     if not t:  # failed to get cookies
         # read cookies from config file
-        ltuid, ltoken = input("ltuid: "), input("ltoken: ")
-        t = {'ltuid':ltuid, 'ltoken':ltoken}
+        t = {'ltuid': args[1], 'ltoken': args[2]}
     gs.set_cookie(t)
 
 
