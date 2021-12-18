@@ -1,5 +1,19 @@
 # in progress
-import platform, os
-if platform.system() == 'Windows':
-    os.system(r'.\venv\Scripts\pyinstaller --onefile --paths E:\JetBrains\IntelljProjects\genshinautologin\venv\Lib\site-packages E:\JetBrains\IntelljProjects\genshinautologin\main.py --distpath ./dd')
+import sys, os
+if sys.platform.startswith('freebsd'):
+    pass
+elif sys.platform.startswith('linux'):
+    pass
+elif sys.platform.startswith('aix'):
+    pass
+elif sys.platform.startswith('win32'):
+    os.system(r'.\venv\Scripts\pyinstaller --onefile --paths '
+              r'.\venv\Lib\site-packages '
+              r'.\main.py --distpath ./dd')
+elif sys.platform.startswith('cygwin'):
+    os.system(r'.\venv\Scripts\pyinstaller --onefile --paths '
+              r'.\venv\Lib\site-packages '
+              r'.\main.py --distpath ./dd')
+elif sys.platform.startswith('darwin'):
+    pass
 
