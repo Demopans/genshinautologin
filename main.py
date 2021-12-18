@@ -28,7 +28,8 @@ def tmp() -> None:
 def configCookie() -> None:
     args: list[str] = sys.argv
     if len(args) != 3:
-        print('autosign.o <ltuid> <ltoken>')
+        print('Useage: main.exe <ltuid> <ltoken>')
+        input("Press Enter to exit...")
         sys.exit(2)
 
     t = gs.get_browser_cookies()
