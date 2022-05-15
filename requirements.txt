@@ -1,0 +1,8 @@
+asyncio
+genshin
+schedule
+nuitka
+nuitka-setuptools
+cryptography
+browser_cookie3
+rsa
