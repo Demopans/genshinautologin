@@ -1,1 +1,1 @@
-#! python -m nuitka --follow-imports genshinautocheckin/main.py
+#! python -m nuitka --follow-imports --onefile --standalone genshinautocheckin/main.py

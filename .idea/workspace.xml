@@ -12,7 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +104,7 @@
       <recent name="F:\genshinautocheckin" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.setup">
+  <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
