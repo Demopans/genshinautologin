@@ -32,6 +32,8 @@ if __name__ == '__main__':
             f = Fernet(key)
             t = f.decrypt(data).decode().split("\n")
             for i in t:
+                if i == '':
+                    break
                 tt = i.split()
                 usr.append({"ltuid": tt[0], "ltoken": tt[1]})
 

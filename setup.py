@@ -1,1 +1,1 @@
-#! python -m nuitka --follow-imports --onefile --standalone genshinautocheckin/main.py
+#! python -m nuitka --enable-plugin=anti-bloat --onefile --standalone genshinautocheckin/main.py
