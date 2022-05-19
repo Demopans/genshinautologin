@@ -1,3 +1,8 @@
-genshinstats
+asyncio
+genshin
 schedule
-pyinstaller
+nuitka
+nuitka-setuptools
+cryptography
+browser_cookie3
+rsa

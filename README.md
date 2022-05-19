@@ -1,5 +1,8 @@
-# genshinautologin
+# Genshin Auto Login
 
+## How to Build
 
-## build
-The project is set up so that the venv is within the project directory
+```
+poetry install
+poetry run build
+```
