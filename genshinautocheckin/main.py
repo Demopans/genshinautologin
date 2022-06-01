@@ -20,7 +20,6 @@ if __name__ == '__main__':
         """
         attempt to auto check in upon starting program,
         """
-        txt = ''
         try:
             reward = asyncio.run(c.claim_daily_reward())
         except Exception as e:
@@ -36,7 +35,7 @@ if __name__ == '__main__':
         import schedule
         def service():
             import multiprocessing as mp
-            with mp.Pool(mp.cpu_count()) as pool:
+            with mp.pool.ThreadPool(mp.cpu_count()) as pool:
                 pool.map_async(task, usr)
 
         service()

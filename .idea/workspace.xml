@@ -12,7 +12,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
+    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genshinautocheckin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/genshinautocheckin/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654051924159</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <created>1654052031341</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654052031341</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,17 +349,6 @@
     <MESSAGE value="remake&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <MESSAGE value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <option name="LAST_COMMIT_MESSAGE" value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
