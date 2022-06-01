@@ -34,8 +34,9 @@ if __name__ == '__main__':
     def servideMgr():
         import schedule
         def service():
+            import multiprocessing.pool as pool
             import multiprocessing as mp
-            with mp.pool.ThreadPool(mp.cpu_count()) as pool:
+            with pool.ThreadPool(mp.cpu_count()) as pool:
                 pool.map_async(task, usr)
 
         service()
