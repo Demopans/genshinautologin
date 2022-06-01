@@ -25,7 +25,7 @@ if __name__ == '__main__':
         except Exception as e:
             txt = f"{e}\n"
         else:
-            txt = f"Claimed {reward.amount}x\"{reward.name}\""
+            txt = f"Claimed {reward.amount}x\"{reward.name}\n"
         print(txt)
         log.write(txt)
         log.flush()
