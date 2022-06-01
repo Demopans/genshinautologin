@@ -12,13 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/genshinautocheckin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/genshinautocheckin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genshinautocheckin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/genshinautocheckin/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
@@ -303,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653694942177</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <created>1654051924159</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654051924159</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +322,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="refactor" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -334,27 +336,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
+    <MESSAGE value="remake&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <MESSAGE value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <option name="LAST_COMMIT_MESSAGE" value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
           <line>22</line>
