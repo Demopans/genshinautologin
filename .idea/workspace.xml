@@ -12,11 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="swap to threading lib&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genshinautocheckin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/genshinautocheckin/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,17 +94,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "WebServerToolWindowFactoryState": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "F:/genshinautocheckin/onefile-maker-windows.py",
+    "last_opened_file_path": "G:/Py3Venv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="Push.Settings">
@@ -120,7 +120,7 @@
       <recent name="F:\genshinautocheckin" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python -m nuitka --enable-plugin=anti-bloat --standalone genshinautocheckin/main.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="genshinautocheckin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,6 +234,8 @@
       <workItem from="1653686006142" duration="11067000" />
       <workItem from="1653776298649" duration="486000" />
       <workItem from="1653777896783" duration="11700000" />
+      <workItem from="1654705957365" duration="20000" />
+      <workItem from="1654706319200" duration="1490000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1652817001279</created>
@@ -354,7 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654052562541</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <created>1654054271904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654054271904</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <created>1654054305644</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1654054305644</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +403,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="remake&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
     <MESSAGE value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
+    <MESSAGE value="swap to threading lib&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="swap to threading lib&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

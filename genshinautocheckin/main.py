@@ -34,11 +34,12 @@ if __name__ == '__main__':
     def servideMgr():
         import schedule
         def service():
-            import multiprocessing.pool as pool
-            import multiprocessing as mp
-            with pool.ThreadPool(mp.cpu_count()) as pool:
-                pool.map_async(task, usr)
-
+            import threading as tp
+            pool = [tp.Thread(target=task,args=(i,)) for i in usr]
+            for i in pool:
+                i.start()
+            for i in pool:
+                i.join()
         service()
         while True:
             schedule.every().day.at('00:00').do(service)
