@@ -22,6 +22,8 @@ if __name__ == '__main__':
         """
         try:
             reward = asyncio.run(c.claim_daily_reward())
+        except genshin.AlreadyClaimed as e:
+            txt = "Already claimed the daily reward today.\n"
         except Exception as e:
             txt = f"{e}\n"
         else:
