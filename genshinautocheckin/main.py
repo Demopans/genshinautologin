@@ -1,9 +1,8 @@
 import asyncio
-import datetime
-from typing import TextIO, Mapping, BinaryIO, Any, Coroutine
+import sys
+
 import genshin.client
 import genshin.utility
-import sys
 
 if __name__ == '__main__':
     # do on startup
@@ -21,9 +20,14 @@ if __name__ == '__main__':
         attempt to auto check in upon starting program,
         """
         try:
+            from platform import system
+            if system() == 'Windows':
+                asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
             reward = asyncio.run(c.claim_daily_reward())
         except genshin.AlreadyClaimed as e:
             txt = "Already claimed the daily reward today.\n"
+        except RuntimeError as e:
+            txt = f"RuntimeError: {e}\n"
         except Exception as e:
             txt = f"{e}\n"
         else:
@@ -37,11 +41,12 @@ if __name__ == '__main__':
         import schedule
         def service():
             import threading as tp
-            pool = [tp.Thread(target=task,args=(i,)) for i in usr]
+            pool = [tp.Thread(target=task, args=(i,)) for i in usr]
             for i in pool:
                 i.start()
             for i in pool:
                 i.join()
+
         service()
         while True:
             schedule.every().day.at('00:00').do(service)
@@ -50,4 +55,6 @@ if __name__ == '__main__':
     usr: list[genshin.client.Client] = []
     log = open("./log.txt", 'w+')
     configCookie(len(sys.argv) > 1)
+    print('\n\n\n\n')
+    sys.stdout.flush()
     servideMgr()
