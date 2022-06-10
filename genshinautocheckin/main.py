@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
 
     def servideMgr():
-        import schedule
+        import schedule, time
         def service():
             import threading as tp
             pool = [tp.Thread(target=task, args=(i,)) for i in usr]
@@ -48,9 +48,10 @@ if __name__ == '__main__':
                 i.join()
 
         service()
+        schedule.every().day.at('00:00').do(service)
         while True:
-            schedule.every().day.at('00:00').do(service)
-
+            schedule.run_pending()
+            time.sleep(1)
 
     usr: list[genshin.client.Client] = []
     log = open("./log.txt", 'w+')
