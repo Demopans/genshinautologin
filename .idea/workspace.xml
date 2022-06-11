@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1190000-9d3e-4179-a8e2-800d735596ba" name="Changes" comment="was not running under wine&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/genshinautocheckin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/genshinautocheckin/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +169,7 @@
       <workItem from="1654784306850" duration="971000" />
       <workItem from="1654812253231" duration="677000" />
       <workItem from="1654834236008" duration="1282000" />
-      <workItem from="1654920207981" duration="1559000" />
+      <workItem from="1654920207981" duration="2566000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1652817001279</created>
@@ -331,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654921579305</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="was not running under wine&#10;&#10;Signed-off-by: Demopans &lt;gao.jeff3@gmail.com&gt;">
+      <created>1654921782315</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1654921782315</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,16 +383,6 @@
           <url>file://$PROJECT_DIR$/../Py3Venv/genshinautocheckin/Lib/site-packages/nuitka/build/SconsHacks.py</url>
           <line>148</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/genshinautocheckin/main.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

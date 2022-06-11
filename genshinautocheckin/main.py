@@ -21,15 +21,15 @@ if __name__ == '__main__':
                 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
             reward = asyncio.run(c.claim_daily_reward())
         except genshin.AlreadyClaimed as e:
-            txt = "Already claimed the daily reward today.\n"
+            txt = f"[{time.strftime('%Y-%m-%d')}] Already claimed the daily reward today."
         except RuntimeError as e:
-            txt = f"RuntimeError: {e}\n"
+            txt = f"[{time.strftime('%Y-%m-%d')}] RuntimeError: {e}"
         except Exception as e:
-            txt = f"{e}\n"
+            txt = f"[{time.strftime('%Y-%m-%d')}] {e}"
         else:
-            txt = f"Claimed {reward.amount}x\"{reward.name}\n"
+            txt = f"Claimed {reward.amount}x\"{reward.name}"
         print(txt)
-        log.write(txt)
+        log.write(txt+'\n')
         log.flush()
 
 
@@ -46,13 +46,12 @@ if __name__ == '__main__':
         schedule.every().day.at('00:00').do(service)
         schedule.run_all()
         while 1:
-            if (n := schedule.idle_seconds()) > 0:
-                time.sleep(n)
-            schedule.run_all()
+            schedule.run_pending()
+            time.sleep(1)
 
     usr: list[genshin.client.Client] = []
     log = open("./log.txt", 'w+')
     configCookie(len(sys.argv) > 1)
-    print('\n\n\n\n')
+    print('\n\n')
     sys.stdout.flush()
     servideMgr()
