@@ -1,8 +1,4 @@
-import asyncio
-import sys
-
-import genshin.client
-import genshin.utility
+import asyncio, sys, genshin.client, genshin.utility, time
 
 if __name__ == '__main__':
     # do on startup
@@ -38,7 +34,7 @@ if __name__ == '__main__':
 
 
     def servideMgr():
-        import schedule, time
+        import schedule
         def service():
             import threading as tp
             pool = [tp.Thread(target=task, args=(i,)) for i in usr]
