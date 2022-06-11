@@ -47,11 +47,12 @@ if __name__ == '__main__':
             for i in pool:
                 i.join()
 
-        service()
         schedule.every().day.at('00:00').do(service)
-        while True:
-            schedule.run_pending()
-            time.sleep(1)
+        schedule.run_all()
+        while 1:
+            if (n := schedule.idle_seconds()) > 0:
+                time.sleep(n)
+            schedule.run_all()
 
     usr: list[genshin.client.Client] = []
     log = open("./log.txt", 'w+')
