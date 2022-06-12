@@ -40,6 +40,7 @@ if __name__ == '__main__':
             pool = [tp.Thread(target=task, args=(i,)) for i in usr]
             for i in pool:
                 i.start()
+                time.sleep(1)
             for i in pool:
                 i.join()
 
